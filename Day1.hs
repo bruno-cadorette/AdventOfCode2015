@@ -8,7 +8,7 @@ day1A :: String -> Int
 day1A = sum . map getVal
 
 day1B :: String -> Maybe Int
-day1B = findIndex (== -1) . scanl (+) 0 . map getVal
+day1B = elemIndex (-1) . scanl (+) 0 . map getVal
         
         
 
